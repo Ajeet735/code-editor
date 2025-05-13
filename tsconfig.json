@@ -18,9 +18,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    
   },
   "include": [
     "src"
-  ]
+, "src/Components/Screens/index.tsx", "src/Components/Screens/HomeScreen/LeftContainer.tsx"  ]
 }

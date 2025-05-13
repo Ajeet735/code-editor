@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import { HomeScreen } from "./Components/Screens/HomeScreen/HomeScreen";
+import { PlaygroundProvider } from "./Components/PlaygroundProvider/PlaygroundProvider";
+import { PlaygroundScreen } from "./Components/Screens/PlaygroundScreen/PlaygroundScreen";
+import { Form } from "./Components/Form";
+import { ModalProvider } from "./Components/ModalProvider/ModalProvider";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PlaygroundProvider>
+      <ModalProvider>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/playground/:fileId/:folderId" element={<PlaygroundScreen />} />
+          <Route path="/form" element={<Form />} />
+        </Routes>
+      </ModalProvider>
+    </PlaygroundProvider>
   );
-}
+};
 
 export default App;

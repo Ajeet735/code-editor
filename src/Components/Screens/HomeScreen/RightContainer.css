@@ -1,0 +1,206 @@
+/* Right Container */
+.right-container {
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .right-container {
+        position: relative;
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #989898;
+    margin-bottom: 1rem;
+}
+
+.header .title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header .title span {
+    font-weight: 700;
+}
+
+/* New Folder Button */
+.header .add-folder {
+    font-size: 0.3rem; /* Reduced font size */
+    padding: 0.3rem 0px; /* Reduced padding */
+    border-radius: 8px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 0.22rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.header .add-folder:hover {
+    background-color: #f0f0f0;
+}
+
+.header .add-folder span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Bold the add icon specifically */
+.header .add-folder .material-icons {
+    font-weight: bold;
+}
+
+.header .add-icons {
+    font-weight: bold;
+}
+
+/* Folder Container */
+.folder-container {
+    margin-bottom: 1rem;
+}
+
+/* Folder Header */
+.folder-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #989898;
+}
+
+.folder-header-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.folder-header-item span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Folder Container Icons */
+.folder-header-item .material-icons {
+    font-size: 1rem; /* Reduced icon size */
+    cursor: pointer;
+}
+
+.folder-header-item .material-icons:hover {
+    color: #FFCA29; /* Highlight color for icons */
+}
+
+/* Add New Playground Button */
+.add-card {
+    font-size: 0.85rem;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+    padding: 0.2rem 0px;
+    border-radius: 6px;
+    color: black;
+    transition: background-color 0.2s ease;
+}
+
+.add-card:hover {
+    background-color: #f0f0f0;
+}
+
+/* Bold the add icon specifically */
+.add-card .material-icons {
+    font-weight: bold;
+}
+
+/* Cards Grid */
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 428px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card */
+.card {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0px #989898;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 13px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px 0px #989898;
+}
+
+.card .title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo inside Card */
+.card img {
+    width: 70px;
+    margin-right: 1rem;
+}
+
+@media (max-width: 425px) {
+    .card img {
+        width: 50px;
+        margin-right: 0.5rem;
+    }
+}
+
+/* Card Actions (Delete, Edit) */
+.card .material-icons {
+    font-size: 1.25rem; /* Reduced icon size for card actions */
+    cursor: pointer;
+    color: #333; /* Default color */
+}
+
+.card .material-icons:hover {
+    color: #FFCA29; /* Highlight on hover */
+}
+
+/* Folder Actions (Delete, Edit) */
+.folder-header-item .material-icons {
+    font-size: 1.2rem; /* Reduced icon size for folder actions */
+    cursor: pointer;
+}
+
+.folder-header-item .material-icons:hover {
+    color: #FFCA29; /* Highlight on hover */
+}

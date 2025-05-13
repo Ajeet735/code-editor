@@ -1,0 +1,156 @@
+.root-editor-container {
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+
+  .editor-header {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .editor-footer {
+    background-color: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 8px;
+      min-width: 100px;
+      background-color: #3e3e3e;
+      color: #c3c4c8;
+      border: none;
+      border-radius: 4px;
+      gap: 5px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #8d8e94;
+      color: white;
+    }
+
+    .run-btn {
+      background-color: #2A635A;
+      color: white;
+      border-radius: 32px;
+      font-weight: 700;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .run-btn:hover {
+      scale: 1.05;
+      background-color: #2e7268;
+    }
+
+    label.btn {
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  button,
+  select {
+    border: none;
+    background-color: #313131;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  select:focus {
+    outline: none;
+  }
+
+  .editor-body {
+    background-color: white;
+    flex-grow: 1;
+    position: relative; // Required to position modal inside
+  }
+
+  .editor-left-container,
+  .editor-right-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .editor-left-container {
+    button {
+      padding: 0.6rem 1rem;
+      background: #2A635A;
+      border: none;
+      border-radius: 32px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      scale: 1.05;
+    }
+  }
+}
+
+// // ✅ Modal styles
+// .modal-overlay {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   //transform: translate(-50%, -50%);
+//    z-index: 100;
+//   background-color: #1e1e1e;
+//    color: white;
+//   padding: 20px;
+//   border-radius: 8px;
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+//   min-width: 300px;
+//   max-width: 90%;
+
+//   h2 {
+//     margin-bottom: 15px;
+//     font-size: 1.2rem;
+//   }
+
+//   input,
+//   textarea {
+//     width: 100%;
+//     padding: 10px;
+//     margin-top: 10px;
+//     background-color: #2c2c2c;
+//     color: white;
+//     border: 1px solid #444;
+//     border-radius: 4px;
+//     font-size: 1rem;
+//   }
+
+//   button {
+//     margin-top: 15px;
+//     padding: 8px 16px;
+//     background-color: #2A635A;
+//     color: white;
+//     border: none;
+//     border-radius: 4px;
+//     font-weight: 600;
+//     cursor: pointer;
+//   }
+
+//   button:hover {
+//     background-color: #2e7268;
+//   }
+// }

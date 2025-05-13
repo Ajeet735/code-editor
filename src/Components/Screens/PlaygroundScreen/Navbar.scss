@@ -1,0 +1,47 @@
+/* components/Navbar.scss */
+.navbar-container {
+    background-color: #1e1e1e;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Full width */
+    height: 4.5rem; /* Default height */
+    border-bottom: 1px solid #333;
+    transition: height 0.3s ease;
+  }
+  
+  .navbar-container.fullscreen {
+    height: 0; /* Fullscreen height when active */
+    overflow: hidden;
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .navbar-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* horizontal gap between logo and text */
+  }
+  
+  .navbar-logo {
+    width: 60px;
+  }
+  
+  .main-heading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .highlight {
+    font-weight: 700;
+  }
