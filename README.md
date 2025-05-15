@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Code Editor 📝
+
+A web-based code editor built with React, TypeScript, Node.js, and Monaco Editor. Supports multiple languages, themes, import/export functionality, and a file/folder structure. Deployed on Vercel.
+
+## 🚀 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/View%20Live-Click%20Here-brightgreen?style=for-the-badge)](https://vercel.com/ajeet735/code-editor)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -44,3 +52,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
